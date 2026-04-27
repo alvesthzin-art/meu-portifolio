@@ -6,13 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Tema Dark & Purple */
+
+				
+			.image.avatar img {
+		    width: 120px;       
+		    height: 120px;     
+		    object-fit: cover; 
+		    object-position: center; 
+		    border-radius: 50%; 
+			}
+			
+			
 			body, #header { background-color: #0b0b0b; }
 			h2, h3, strong { color: #a259ff !important; }
 			a { color: #a259ff; border-bottom-color: rgba(162, 89, 255, 0.5); }
 			a:hover { color: #bf8bff !important; }
 			
-			/* Botões Personalizados */
+			
 			.button.primary {
 				background-color: #a259ff !important;
 				box-shadow: none;
@@ -24,8 +34,7 @@
 				transform: scale(1.05);
 			}
 
-			/* Animação das Imagens dos Projetos */
-			.work-item img {
+			
 				transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
 				filter: grayscale(40%);
 			}
@@ -35,14 +44,14 @@
 				box-shadow: 0 0 20px rgba(162, 89, 255, 0.4);
 			}
 
-            /* Correção para o link ocupar a imagem toda e funcionar */
+           
             .work-item a.image.fit {
                 border-bottom: none;
                 cursor: pointer;
                 display: block;
             }
 
-			/* Interação nos Ícones de Habilidades */
+			
 			.skills-section h3 {
 				transition: transform 0.3s ease;
 			}
