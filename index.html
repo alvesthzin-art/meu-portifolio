@@ -6,23 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-
-				
-			.image.avatar img {
-		    width: 120px;       
-		    height: 120px;     
-		    object-fit: cover; 
-		    object-position: center; 
-		    border-radius: 50%; 
-			}
-			
-			
+			/* Tema Dark & Purple */
 			body, #header { background-color: #0b0b0b; }
 			h2, h3, strong { color: #a259ff !important; }
 			a { color: #a259ff; border-bottom-color: rgba(162, 89, 255, 0.5); }
 			a:hover { color: #bf8bff !important; }
+
+			/* AJUSTE DA FOTO DE PERFIL - Limpo de caracteres invisíveis */
+			.image.avatar img {
+				width: 120px !important;
+				height: 120px !important;
+				object-fit: cover !important;
+				object-position: center !important;
+				border-radius: 50% !important;
+				display: block;
+			}
 			
-			
+			/* Botões */
 			.button.primary {
 				background-color: #a259ff !important;
 				box-shadow: none;
@@ -34,24 +34,25 @@
 				transform: scale(1.05);
 			}
 
-			
+			/* Imagens dos Projetos */
+			.work-item img {
 				transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
 				filter: grayscale(40%);
 			}
+
 			.work-item img:hover {
 				transform: scale(1.03);
 				filter: grayscale(0%);
 				box-shadow: 0 0 20px rgba(162, 89, 255, 0.4);
 			}
 
-           
-            .work-item a.image.fit {
-                border-bottom: none;
-                cursor: pointer;
-                display: block;
-            }
+			.work-item a.image.fit {
+				border-bottom: none;
+				cursor: pointer;
+				display: block;
+			}
 
-			
+			/* Habilidades */
 			.skills-section h3 {
 				transition: transform 0.3s ease;
 			}
@@ -64,95 +65,105 @@
 	<body class="is-preload">
 
 		<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Thiago Costa" /></a>
-					<h1><strong>Thiago Costa</strong></h1>
-					<p>Desenvolvedor Full Stack em formação.<br /></p>
-				</div>
-			</header>
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/avatar.jpeg" alt="Thiago Costa" /></a>
+				<h1><strong>Thiago Costa</strong></h1>
+				<p>Desenvolvedor Full Stack em formação.<br /></p>
+			</div>
+		</header>
 
 		<div id="main">
+			<section id="one">
+				<header class="major">
+					<h2>Olá,<br />Seja bem vindo ao meu portfólio</h2>
+				</header>
+				<p>Tenho 19 anos e sou um desenvolvedor em formação pelo SENAI Jandira. Procuro aprender novas tecnologias para entregar soluções eficientes. Atualmente, busco minha primeira oportunidade no mercado de tecnologia para colocar meu conhecimento em prática e evoluir constantemente.</p>
+				<ul class="actions">
+					<li><a href="#three" class="button primary">Contato</a></li>
+				</ul>
+			</section>
 
-				<section id="one">
-						<header class="major">
-							<h2>Olá,<br />
-							Seja bem vindo ao meu portifólio</h2>
-						</header>
-						<p>Tenho 19 anos e sou um desenvolvedor em formação pelo SENAI Jandira. 
-						Procuro aprender novas tecnologias para entregar soluções eficientes. 
-						Atualmente, busco minha primeira oportunidade no mercado de tecnologia 
-						para colocar meu conhecimento em prática e evoluir constantemente.</p>
-						<ul class="actions">
-							<li><a href="#three" class="button primary">Contato</a></li>
+			<section id="skills" class="skills-section">
+				<header class="major">
+					<h2>Habilidades Técnicas</h2>
+				</header>
+				<div class="row">
+					<article class="col-4 col-12-xsmall">
+						<h3 class="icon solid fa-server" style="color: #a259ff;"> Backend</h3>
+						<p>Construção de APIs utilizando <strong>Java, Node.js e Python</strong>.</p>
+					</article>
+					<article class="col-4 col-12-xsmall">
+						<h3 class="icon brands fa-react" style="color: #a259ff;"> Frontend</h3>
+						<p>Criação de interfaces responsivas e dinâmicas com <strong>JavaScript, HTML5 e CSS3</strong>.</p>
+					</article>
+					<article class="col-4 col-12-xsmall">
+						<h3 class="icon solid fa-tools" style="color: #a259ff;"> DevOps/Tools</h3>
+						<p>Versionamento com <strong>Git/GitHub</strong>, Deploy contínuo e noções de <strong>UI/UX Design</strong>.</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="two">
+				<h2>Projetos em Destaque</h2>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="https://github.com/alvesthzin-art/API-de-Cidade-Estados" target="_blank" class="image fit"><img src="images/thumbs/01.jpg" alt="API Cidades" /></a>
+						<h3>API de Cidades e Estados</h3>
+						<p>Projeto de API para busca com filtros de Cidades e Estados.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="https://alvesthzin-art.github.io/Pikachu/#" target="_blank" class="image fit"><img src="images/thumbs/02.jpg" alt="Landing Page Pikachu" /></a>
+						<h3>Landing Page Pikachu</h3>
+						<p>Projeto responsivo de uma página do Pikachu.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="https://github.com/alvesthzin-art/Jokenpo" target="_blank" class="image fit"><img src="images/thumbs/03.jpg" alt="Jokenpô Java" /></a>
+						<h3>Jokenpô Java Edition</h3>
+						<p>Projeto do jogo jokenpô feito em java.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="https://alvesthzin-art.github.io/Mudar-cor/" target="_blank" class="image fit"><img src="images/thumbs/04.jpg" alt="Seletor de Cores" /></a>
+						<h3>Seletor Dinâmico de Cores</h3>
+						<p>Projeto interativo que muda a cor da página de acordo com a cor que você escreve.</p>
+					</article>
+				</div>
+				<ul class="actions">
+					<li><a href="https://github.com/alvesthzin-art" target="_blank" class="button">Repositório Completo</a></li>
+				</ul>
+			</section>
+
+			<section id="three">
+				<h2>Vamos conversar?</h2>
+				<div class="row">
+					<div class="col-12">
+						<ul class="labeled-icons">
+							<li><h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>seu-email@dominio.com</li>
+							<li><h3 class="icon brands fa-instagram"><span class="label">Instagram</span></h3><a href="https://www.instagram.com/alves_th7" target="_blank">@alves_th7</a></li>
+							<li><h3 class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></h3><a href="https://wa.me/5511977832812" target="_blank">Mande uma mensagem</a></li>
+							<li><h3 class="icon solid fa-map-marker-alt"><span class="label">Localização</span></h3>Itapevi, SP - Brasil</li>
 						</ul>
-					</section>
+					</div>
+				</div>
+			</section>
+		</div>
 
-				<section id="skills" class="skills-section">
-						<header class="major">
-							<h2>Habilidades Técnicas</h2>
-						</header>
-						<div class="row">
-							<article class="col-4 col-12-xsmall">
-								<h3 class="icon solid fa-server" style="color: #a259ff;"> Backend</h3>
-								<p>Construção de APIs utilizando <strong>Java, Node.js e Python</strong>.</p>
-							</article>
-							<article class="col-4 col-12-xsmall">
-								<h3 class="icon brands fa-react" style="color: #a259ff;"> Frontend</h3>
-								<p>Criação de interfaces responsivas e dinâmicas com <strong>JavaScript, HTML5 e CSS3</strong>.</p>
-							</article>
-							<article class="col-4 col-12-xsmall">
-								<h3 class="icon solid fa-tools" style="color: #a259ff;"> DevOps/Tools</h3>
-								<p>Versionamento com <strong>Git/GitHub</strong>, Deploy contínuo e noções de <strong>UI/UX Design</strong>.</p>
-							</article>
-						</div>
-					</section>
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://github.com/alvesthzin-art" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Thiago Costa</li><li>2026 | SENAI Jandira</li>
+				</ul>
+			</div>
+		</footer>
 
-				<section id="two">
-						<h2>Projetos em Destaque</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-                                <a href="https://github.com/alvesthzin-art/API-de-Cidade-Estados" target="_blank" class="image fit"><img src="images/thumbs/01.jpg" alt="API Cidades" /></a>
-								<h3>API de Cidades e Estados</h3>
-								<p>Projeto de API para busca com filtros de Cidades e Estados.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://alvesthzin-art.github.io/Pikachu/#" target="_blank" class="image fit"><img src="images/thumbs/02.jpg" alt="Landing Page Pikachu" /></a>
-								<h3>Landing Page Pikachu</h3>
-								<p>Projeto responsivo de uma página do Pikachu.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/alvesthzin-art/Jokenpo" target="_blank" class="image fit"><img src="images/thumbs/03.jpg" alt="Jokenpô Java" /></a>
-								<h3>Jokenpô Java Edition</h3>
-								<p>Projeto do jogo jokenpô feito em java.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://alvesthzin-art.github.io/Mudar-cor/" target="_blank" class="image fit"><img src="images/thumbs/04.jpg" alt="Seletor de Cores" /></a>
-								<h3>Seletor Dinâmico de Cores</h3>
-								<p>Projeto interativo que muda a cor da página de acordo com a cor que você escreve.</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="https://github.com/alvesthzin-art" target="_blank" class="button">Repositório Completo</a></li>
-						</ul>
-					</section>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-				<section id="three">
-						<h2>Vamos conversar?</h2>
-						<p>Estou sempre aberto a novos projetos, colaborações e oportunidades no mercado de tecnologia.</p>
-						<div class="row">
-							<div class="col-12">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="mailto:seu-email@dominio.com">seu-email@dominio.com</a>
-									</li>
-									<li>
-										<h3 class="icon brands fa-instagram"><span class="label">Instagram</span></h3>
-										<a href="https://www.instagram.com/alves_th7?igsh=MWxsOXR1N214Mjlkbw==" target="_blank">instagram.com/alves_th7</a>
-									</li>
-									<li>
-										<h3 class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></h3>
-										<a href="https://wa.me/5511977832812" target="_blank">Clique aqui para enviar uma mensagem</a>
-									</li>
-									<li>
-										<h3 class="icon solid fa-map-marker-alt"><span class="label
+	</body>
+</html>
